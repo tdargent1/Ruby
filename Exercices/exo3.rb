@@ -7,5 +7,6 @@ until i == 5
     i += 1
 end
 
-puts "\nIndice du plus grand élément : "
+maxIndex = array.each_with_index.max[1] + 1
+puts "\nIndice du plus grand élément : " + maxIndex.to_s
 puts "Moyenne : " + (array.reduce {|a, b| a + b} / 5).to_s
