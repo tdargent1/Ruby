@@ -1,0 +1,1 @@
+docker run -ti --rm -v ${pwd}:/home/exo -w /home/exo ruby:latest ruby exo1.rb
