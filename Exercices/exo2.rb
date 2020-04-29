@@ -1,11 +1,4 @@
 puts "Saisir un nombre :"
-nombre = gets.to_i
+nombre = gets.chomp!.to_i
 
-i = 0
-total = 0
-until i == nombre + 1
-    total = total + i
-    i += 1
-end
-
-puts total
+puts "Total : " + ((1..nombre).reduce {|a, b| a + b}).to_s
